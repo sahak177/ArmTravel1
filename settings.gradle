@@ -1,0 +1,3 @@
+include ':myModul'
+include ':app'
+rootProject.name = "ArmTravel"
