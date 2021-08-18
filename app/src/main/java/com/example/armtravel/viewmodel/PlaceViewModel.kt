@@ -1,4 +1,4 @@
-package com.example.mymodul
+package com.example.armtravel.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
