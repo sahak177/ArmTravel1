@@ -16,7 +16,7 @@
         android:label="placeFragment"
         tools:layout="@layout/fragment_place" />
     <action
-        android:id="@+id/action_global_homeFragment"
+        android:id="@+id/action_global_placeFragment"
         app:destination="@id/placeFragment" />
 
 
