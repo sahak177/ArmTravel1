@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home_general"
+    app:startDestination="@id/fakeStartFragment">
+
+    <fragment
+        android:id="@+id/fakeStartFragment"
+        android:name="com.exsample.armtravel.ui.base.fragment.FakeFragment"
+        android:label="" />
+
+    <fragment
+        android:id="@+id/placeFragment"
+        android:name="com.exsample.armtravel.ui.place.PlaceFragment"
+        android:label="placeFragment"
+        tools:layout="@layout/fragment_place" />
+    <action
+        android:id="@+id/action_global_homeFragment"
+        app:destination="@id/placeFragment" />
+
+
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.exsample.armtravel.ui.favorite.FavoriteFragment"
+        android:label="FavoriteFragment"
+        tools:layout="@layout/fragment_favorite" />
+
+    <action
+        android:id="@+id/action_global_favoriteFragment"
+        app:destination="@id/favoriteFragment" />
+
+
+    <fragment
+        android:id="@+id/placeDetailsFragment"
+        android:name="com.exsample.armtravel.ui.place.PlaceDetailFragment"
+        android:label="PlaceDetailsFragment"
+        tools:layout="@layout/fragment_place_detail"/>
+
+    <action
+        android:id="@+id/action_global_placeDetailsFragment"
+        app:destination="@id/placeDetailsFragment" />
+
+
+</navigation>
